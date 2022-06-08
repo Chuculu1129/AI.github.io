@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>伪人工智能</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ai.css" />
+    <meta charset="UTF-8" />
+
+</head>
+
+<body>
+    <div id="cuerpaso">
+        <div id="cuadro">
+            <!-- 头框 -->
+            <div class="top">
+                <h4 id="titulo">伪人工智能，米粒儿</h4>
+                <div class="idioma">
+                    <button id="chino">中文</button>
+                    <button id="espanol" onclick="spanish()">español</button>
+                </div>
+            </div>
+
+            <!-- 中部 -->
+            <div id="center" class="cuadro">
+                <img id="imagen" src="./imagen/mili.png" />
+                <div id="conversacion">
+                    <div class="mensaje1">
+                        <p id="mmm"></p>
+                        <p class="mili"></p>
+                    </div>
+                    <div class="mensaje2">
+                        <p class="cliente"></p>
+                    </div>
+                    <div class="mensaje3">
+                        <p class="variables"></p>
+                    </div>
+
+                </div>
+                <script src="./javascript/center.js"></script>
+            </div>
+
+            <!-- 尾部 -->
+            <div class="end">
+                <button id="btn1" onclick="preguntas()">快速问答</button>
+                <div id="pregunta" class="preguntasRapidas">
+                    <button id="btn1.1" onclick="pregunta1()">谁是你的制作者？</button>
+                    <button id="btn1.2" onclick="pregunta2()">你都能为我做些什么？</button>
+                </div>
+                <br />
+                <input type="text" id="preguntar">
+                <br />
+                <button id="btn2" onclick="enviar()">发送</button>
+
+            </div>
+
+            <script src="./javascript/AI.js"></script>
+            <script src="./javascript/preguntaRapida.js"></script>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

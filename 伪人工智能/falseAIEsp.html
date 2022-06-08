@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>inteligencia artificial Mili</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ai.css" />
+    <meta charset="UTF-8" />
+
+</head>
+
+<body>
+    <div id="cuerpaso">
+        <div id="cuadro">
+            <!-- 头框 -->
+            <div class="top">
+                <h4 id="titulo">Inteligencia Artificial Mili</h4>
+                <div class="idioma">
+                    <button id="chino" onclick="chinese()">中文</button>
+                    <button id="espanol" onclick="spanish()">español</button>
+                </div>
+            </div>
+
+            <!-- 中部 -->
+            <div id="center" class="cuadro">
+                <img id="imagen" src="./imagen/mili.png" />
+                <div id="conversacion">
+                    <div class="mensaje1">
+                        <p id="mmm"></p>
+                        <p class="mili"></p>
+                    </div>
+                    <div class="mensaje2">
+                        <p class="cliente"></p>
+                    </div>
+                    <div class="mensaje3">
+                        <p class="variables"></p>
+                    </div>
+
+                </div>
+                <script src="./javascript/centerEsp.js"></script>
+            </div>
+
+            <!-- 尾部 -->
+            <div class="end">
+                <button id="btn1" onclick="preguntas()">Preguntas Rapidas</button>
+                <div id="pregunta" class="preguntasRapidas">
+                    <button id="btn1.1" onclick="pregunta1()">Quien fue tu creador?</button>
+                    <button id="btn1.2" onclick="pregunta2()">Que puedes hacer por mi ?</button>
+                </div>
+                <br />
+                <input type="text" id="preguntar">
+                <br />
+                <button id="btn2" onclick="enviar()">enviar</button>
+
+            </div>
+
+            <script src="./javascript/AIEsp.js"></script>
+            <script src="./javascript/preguntaRapidaEsp.js"></script>
+
+           
+
+        </div>
+    </div>
+</body>
+
+</html>
